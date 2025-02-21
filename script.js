@@ -6,4 +6,4 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("Mesaj trimis! Vă vom contacta în curând.");
         form.reset();
     });
-});
+});  
