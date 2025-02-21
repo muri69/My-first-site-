@@ -3,58 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talk on the Spot</title>
-    <link rel="stylesheet" href="design.css">
-    <script defer src="script.js"></script>
+    <title>Talk on the Spot Party</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Talk on the Spot</h1>
+        <div class="logo">Talk on the Spot Party</div>
         <nav>
             <ul>
-                <li><a href="#despre">Despre</a></li>
-                <li><a href="#galerie">Galerie</a></li>
-                <li><a href="#pachete">Pachete</a></li>
+                <li><a href="#home">Acasă</a></li>
+                <li><a href="#about">Despre Noi</a></li>
+                <li><a href="#services">Servicii</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="despre">
-        <h2>Despre noi</h2>
-        <p>O experiențaa unică unde spontaneitatea face legea! Organizăm petreceri interactive cu provocări surpriză.</p>
-    </section>
-
-    <section id="galerie">
-        <h2>Galerie</h2>
-        <div class="gallery">
-            <img src="images/image1.jpg" alt="Eveniment 1">
-            <img src="images/image2.jpg" alt="Eveniment 2">
-            <img src="images/image3.jpg" alt="Eveniment 3">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Transformă-ți evenimentul într-o aventură unică!</h1>
+            <p>Oferim experiențe personalizate pentru liceeni, concepute în funcție de pasiunile tale.</p>
+            <a href="#services" class="btn">Află mai multe</a>
         </div>
     </section>
 
-    <section id="pachete">
-        <h2>Pachete</h2>
-        <div class="packages">
-            <div class="package">Basic - 100 RON</div>
-            <div class="package">Premium - 200 RON</div>
-            <div class="package">VIP - 300 RON</div>
+    <!-- Descriere -->
+    <section id="about" class="description">
+        <h2>Despre Noi</h2>
+        <p>Talk on the Spot Party este o agenție de organizare de evenimente personalizate pentru liceeni. Ne concentrăm pe crearea de experiențe tematice unice, care să transforme fiecare aniversare într-o amintire de neuitat.</p>
+    </section>
+
+    <!-- Problema Identificată -->
+    <section class="problem">
+        <h2>Problema Identificată</h2>
+        <p>Pentru majoritatea tinerilor, aniversările au devenit evenimente previzibile, organizate în mod similar – o petrecere standard cu prietenii, într-o locație obișnuită. Lipsa de originalitate face ca aceste momente speciale să devină repetitive și lipsite de unicitate. Fără o experiență memorabilă, aniversările riscă să fie uitate rapid, în loc să fie transformate în amintiri de neuitat.</p>
+    </section>
+
+    <!-- Soluția -->
+    <section class="solution">
+        <h2>Soluția Noastră</h2>
+        <p>Oferim experiențe personalizate, transformând zilele de naștere sau alte ocazii speciale în aventuri tematice unice. Clienții pot alege dintr-o gamă variată de concepte, de la drumeții și seri culturale la petreceri neconvenționale.</p>
+    </section>
+
+    <!-- Exemple de Evenimente -->
+    <section id="services" class="events">
+        <h2>Exemple de Evenimente</h2>
+        <div class="event-list">
+            <div class="event">
+                <h3>Pentru iubitorii de aventură</h3>
+                <p>Excursie la munte cu cortul, cină la foc de tabără, muzică live la chitară, activități în aer liber (tiroliană, drumeții).</p>
+            </div>
+            <div class="event">
+                <h3>Pentru pasionații de cărți</h3>
+                <p>Seară de lectură într-un decor eclectico-romantic, cu muzică live la harpă, dezbateri tematice și cine fine dining.</p>
+            </div>
+            <div class="event">
+                <h3>Pentru călători</h3>
+                <p>Organizarea unui city break cultural (Florența, Praga, Viena), cu itinerariu complet (cazare, transport, tur ghidat).</p>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Nume" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Mesaj" required></textarea>
-            <button type="submit">Trimite</button>
-        </form>
+    <!-- Pachete -->
+    <section class="packages">
+        <h2>Pachete Oferite</h2>
+        <div class="package-list">
+            <div class="package">
+                <h3>Basic</h3>
+                <p>Planificare și consultanță. Clientul primește un plan detaliat și îl implementează singur.</p>
+            </div>
+            <div class="package">
+                <h3>Standard</h3>
+                <p>Organizare completă a evenimentului (planificare, locație, decor, muzică, activități).</p>
+            </div>
+            <div class="package">
+                <h3>Premium</h3>
+                <p>Organizare all-inclusive (transport, cazare, servicii foto/video, catering, invitații personalizate).</p>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Talk on the Spot. Toate drepturile rezervate.</p>
+    <!-- Footer -->
+    <footer id="contact">
+        <p>Contact: contact@talkonthespotparty.ro | Tel: +40 123 456 789</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
+        </div>
     </footer>
 </body>
 </html>
