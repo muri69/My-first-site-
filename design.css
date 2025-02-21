@@ -1,9 +1,72 @@
+/* Setăm fundalul general la negru */
 body {
-    background-color: #f0f0f0;
+    background-color: #000; /* Fundal negru */
+    color: #fff; /* Text alb pentru contrast */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
+/* Header cu fundal negru și text mov */
 header {
-    background-color: #333;
+    background-color: #6a0dad; /* Mov pentru header */
+    color: white; /* Text alb în header */
+    padding: 20px;
+}
+
+/* Link-uri din navbar cu text mov */
+nav ul li a {
+    color: #6a0dad; /* Mov pentru link-uri */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Secțiunile să aibă fundal transparent cu text alb */
+section {
+    padding: 50px;
+    color: white; /* Text alb pentru secțiuni */
+}
+
+/* Imagini din galerie cu bordură albă */
+.gallery img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid white; /* Bordură albă pentru imagini */
+}
+
+/* Pachete cu fundal mov și text alb */
+.package {
+    background-color: #6a0dad; /* Mov pentru pachete */
     color: white;
     padding: 20px;
+    border-radius: 10px;
+}
+
+/* Formulare cu input-uri albe pe fundal negru */
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    display: block;
+    background-color: #333; /* Fundal mai închis pentru input-uri */
+    color: white; /* Text alb în input-uri */
+    border: 1px solid #6a0dad; /* Border mov pentru input-uri */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #6a0dad; /* Mov pentru buton */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Footer cu fundal negru și text alb */
+footer {
+    background-color: #000; /* Fundal negru pentru footer */
+    color: white; /* Text alb */
+    padding: 10px;
 }
