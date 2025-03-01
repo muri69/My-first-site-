@@ -149,3 +149,70 @@ footer .social-links a {
 footer .social-links a:hover {
     color: #ff6f61; /* Culoare la hover */
 }
+
+/* Stiluri pentru butonul hamburger */
+.hamburger {
+    display: none; /* Ascunde butonul pe desktop */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+}
+
+/* Media Queries pentru mobil */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        display: none; /* Ascunde meniul pe mobil */
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    nav ul.active {
+        display: flex; /* Afișează meniul când este activ */
+    }
+
+    header .logo {
+        font-size: 1.2rem; /* Micșorează dimensiunea logo-ului */
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; /* Micșorează dimensiunea textului */
+    }
+
+    .hero-content h1 {
+        font-size: 2rem; /* Ajustează dimensiunea titlului pentru mobil */
+    }
+
+    .hero-content p {
+        font-size: 1.2rem; /* Ajustează dimensiunea textului pentru mobil */
+    }
+
+    .btn {
+        padding: 0.8rem 1.5rem; /* Ajustează dimensiunea butonului */
+    }
+
+    .event, .package {
+        width: 100%; /* Face ca evenimentele și pachetele să ocupe întreaga lățime pe mobil */
+        margin-bottom: 1rem;
+    }
+}
