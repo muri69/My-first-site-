@@ -30,13 +30,16 @@ header .logo {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem; /* Reducem spațiul dintre link-uri */
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
+    font-size: 0.9rem; /* Reducem dimensiunea fontului */
     transition: color 0.3s ease;
 }
 
@@ -68,22 +71,23 @@ nav ul li a:hover {
 .hero-content {
     position: relative;
     z-index: 1;
+    padding: 0 1rem; /* Adăugăm padding pentru a evita depășirea */
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 2.5rem; /* Reducem dimensiunea titlului */
     margin-bottom: 1rem;
 }
 
 .hero-content p {
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* Reducem dimensiunea textului */
     margin-bottom: 2rem;
 }
 
 .btn {
     background: #ffcc00;
     color: #333;
-    padding: 1rem 2rem;
+    padding: 0.8rem 1.5rem; /* Reducem dimensiunea butonului */
     text-decoration: none;
     border-radius: 5px;
     font-weight: 600;
@@ -95,17 +99,17 @@ nav ul li a:hover {
 }
 
 .description, .problem, .solution, .events, .packages {
-    padding: 4rem 2rem;
+    padding: 2rem 1rem; /* Reducem padding-ul */
     text-align: center;
     background: #fff;
-    margin: 2rem 0;
+    margin: 1rem 0;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 2rem; /* Reducem dimensiunea titlului */
+    margin-bottom: 1rem;
     color: #ff6f61;
 }
 
@@ -113,14 +117,14 @@ h2 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem; /* Reducem spațiul dintre elemente */
 }
 
 .event, .package {
     background: #fff;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 10px;
-    width: 30%;
+    width: 100%; /* Facem elementele să ocupe întreaga lățime pe mobil */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
@@ -133,7 +137,7 @@ footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 footer .social-links {
@@ -142,7 +146,7 @@ footer .social-links {
 
 footer .social-links a {
     color: #fff;
-    margin: 0 1rem;
+    margin: 0 0.5rem; /* Reducem spațiul dintre link-uri */
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -205,7 +209,7 @@ footer .social-links a:hover {
     }
 
     .hero-content p {
-        font-size: 1.2rem;
+        font-size: 1rem; /* Reducem dimensiunea textului pentru mobil */
     }
 
     .btn {
