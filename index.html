@@ -6,6 +6,7 @@
     <title>Talk on the Spot Party</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
@@ -21,6 +22,7 @@
                 <li><a href="#home">Acasă</a></li>
                 <li><a href="#about">Despre</a></li>
                 <li><a href="#services">Servicii</a></li>
+                <li><a href="#gallery">Galerie</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -35,70 +37,65 @@
         </div>
     </section>
 
-    <!-- Descriere -->
-    <section id="about" class="description">
+    <!-- Despre Noi -->
+    <section id="about" class="about">
         <h2>Despre Noi</h2>
         <p>Talk on the Spot Party este o agenție de organizare de evenimente personalizate pentru liceeni. Ne concentrăm pe crearea de experiențe tematice unice, care să transforme fiecare aniversare într-o amintire de neuitat.</p>
     </section>
 
-    <!-- Problema Identificată -->
-    <section class="problem">
-        <h2>Problema Identificată</h2>
-        <p>Pentru majoritatea tinerilor, aniversările au devenit evenimente previzibile, organizate în mod similar – o petrecere standard cu prietenii, într-o locație obișnuită. Lipsa de originalitate face ca aceste momente speciale să devină repetitive și lipsite de unicitate. Fără o experiență memorabilă, aniversările riscă să fie uitate rapid, în loc să fie transformate în amintiri de neuitat.</p>
-    </section>
-
-    <!-- Soluția -->
-    <section class="solution">
-        <h2>Soluția Noastră</h2>
-        <p>Oferim experiențe personalizate, transformând zilele de naștere sau alte ocazii speciale în aventuri tematice unice. Clienții pot alege dintr-o gamă variată de concepte, de la drumeții și seri culturale la petreceri neconvenționale.</p>
-    </section>
-
-    <!-- Exemple de Evenimente -->
-    <section id="services" class="events">
-        <h2>Exemple de Evenimente</h2>
-        <div class="event-list">
-            <div class="event">
-                <h3>Pentru iubitorii de aventură</h3>
-                <p>Excursie la munte cu cortul, cină la foc de tabără, muzică live la chitară, activități în aer liber (tiroliană, drumeții).</p>
-            </div>
-            <div class="event">
-                <h3>Pentru pasionații de cărți</h3>
-                <p>Seară de lectură într-un decor eclectico-romantic, cu muzică live la harpă, dezbateri tematice și cine fine dining.</p>
-            </div>
-            <div class="event">
-                <h3>Pentru călători</h3>
-                <p>Organizarea unui city break cultural (Florența, Praga, Viena), cu itinerariu complet (cazare, transport, tur ghidat).</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pachete -->
-    <section class="packages">
-        <h2>Pachete Oferite</h2>
-        <div class="package-list">
-            <div class="package">
+    <!-- Servicii -->
+    <section id="services" class="services">
+        <h2>Servicii</h2>
+        <div class="service-list">
+            <div class="service">
                 <h3>Basic</h3>
                 <p>Planificare și consultanță. Clientul primește un plan detaliat și îl implementează singur.</p>
             </div>
-            <div class="package">
+            <div class="service">
                 <h3>Standard</h3>
                 <p>Organizare completă a evenimentului (planificare, locație, decor, muzică, activități).</p>
             </div>
-            <div class="package">
+            <div class="service">
                 <h3>Premium</h3>
                 <p>Organizare all-inclusive (transport, cazare, servicii foto/video, catering, invitații personalizate).</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="contact">
-        <p>Contact: contact@talkonthespotparty.ro | Tel: +40 123 456 789</p>
-        <div class="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">TikTok</a>
+    <!-- Galerie -->
+    <section id="gallery" class="gallery">
+        <h2>Galerie</h2>
+        <div class="gallery-grid">
+            <img src="https://via.placeholder.com/300" alt="Eveniment 1">
+            <img src="https://via.placeholder.com/300" alt="Eveniment 2">
+            <img src="https://via.placeholder.com/300" alt="Eveniment 3">
+            <img src="https://via.placeholder.com/300" alt="Eveniment 4">
         </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Nume" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Mesaj" required></textarea>
+            <button type="submit">Trimite</button>
+        </form>
+        <div class="contact-info">
+            <p>Email: contact@talkonthespotparty.ro</p>
+            <p>Telefon: +40 123 456 789</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Talk on the Spot Party. Toate drepturile rezervate.</p>
     </footer>
 
     <script src="scripts.js"></script>
