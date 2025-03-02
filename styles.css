@@ -9,8 +9,8 @@ body {
 }
 
 header {
-    background: #ff6f61;
-    color: #fff;
+    background: #fff;
+    color: #333;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -19,32 +19,32 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #fff;
+    color: #ff6f61;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 0;
     margin: 0;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.9rem;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
+    color: #ff6f61;
 }
 
 .hero {
@@ -85,8 +85,8 @@ nav ul li a:hover {
 }
 
 .btn {
-    background: #ffcc00;
-    color: #333;
+    background: #ff6f61;
+    color: #fff;
     padding: 0.8rem 1.5rem;
     text-decoration: none;
     border-radius: 5px;
@@ -95,10 +95,10 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background: #ff6f61;
+    background: #ffcc00;
 }
 
-.about, .services, .gallery, .contact {
+.events, .packages, .conclusion, .contact {
     padding: 4rem 2rem;
     text-align: center;
 }
@@ -109,14 +109,14 @@ h2 {
     color: #ff6f61;
 }
 
-.service-list, .gallery-grid {
+.event-grid, .package-grid {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 2rem;
 }
 
-.service, .gallery-grid img {
+.event-card, .package-card {
     background: #f4f4f4;
     padding: 2rem;
     border-radius: 10px;
@@ -125,8 +125,25 @@ h2 {
     transition: transform 0.3s ease;
 }
 
-.service:hover, .gallery-grid img:hover {
+.event-card:hover, .package-card:hover {
     transform: translateY(-10px);
+}
+
+.event-card img, .package-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+.conclusion p {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .contact form {
@@ -187,7 +204,7 @@ footer {
 
 /* Media Queries pentru mobil */
 @media (max-width: 768px) {
-    .service, .gallery-grid img {
+    .event-card, .package-card {
         width: 100%;
     }
 }
