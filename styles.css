@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background: #f4f4f4;
+    background: #fff;
     line-height: 1.6;
 }
 
@@ -30,7 +30,7 @@ header .logo {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 1rem; /* Reducem spațiul dintre link-uri */
+    gap: 1rem;
     padding: 0;
     margin: 0;
 }
@@ -39,7 +39,7 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.9rem; /* Reducem dimensiunea fontului */
+    font-size: 0.9rem;
     transition: color 0.3s ease;
 }
 
@@ -48,7 +48,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    background: url('event-hero.jpg') no-repeat center center/cover;
+    background: url('https://via.placeholder.com/1200x800') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -71,23 +71,23 @@ nav ul li a:hover {
 .hero-content {
     position: relative;
     z-index: 1;
-    padding: 0 1rem; /* Adăugăm padding pentru a evita depășirea */
+    padding: 0 1rem;
 }
 
 .hero-content h1 {
-    font-size: 2.5rem; /* Reducem dimensiunea titlului */
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
 .hero-content p {
-    font-size: 1.2rem; /* Reducem dimensiunea textului */
+    font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
 .btn {
     background: #ffcc00;
     color: #333;
-    padding: 0.8rem 1.5rem; /* Reducem dimensiunea butonului */
+    padding: 0.8rem 1.5rem;
     text-decoration: none;
     border-radius: 5px;
     font-weight: 600;
@@ -98,39 +98,84 @@ nav ul li a:hover {
     background: #ff6f61;
 }
 
-.description, .problem, .solution, .events, .packages {
-    padding: 2rem 1rem; /* Reducem padding-ul */
+.about, .services, .gallery, .contact {
+    padding: 4rem 2rem;
     text-align: center;
-    background: #fff;
-    margin: 1rem 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    font-size: 2rem; /* Reducem dimensiunea titlului */
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
     color: #ff6f61;
 }
 
-.event-list, .package-list {
+.service-list, .gallery-grid {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 1rem; /* Reducem spațiul dintre elemente */
+    gap: 2rem;
 }
 
-.event, .package {
-    background: #fff;
-    padding: 1rem;
+.service, .gallery-grid img {
+    background: #f4f4f4;
+    padding: 2rem;
     border-radius: 10px;
-    width: 100%; /* Facem elementele să ocupe întreaga lățime pe mobil */
+    width: 30%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
-.event:hover, .package:hover {
+.service:hover, .gallery-grid img:hover {
     transform: translateY(-10px);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background: #ff6f61;
+    color: #fff;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact button:hover {
+    background: #ffcc00;
+}
+
+.contact-info {
+    margin-top: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff6f61;
 }
 
 footer {
@@ -140,84 +185,9 @@ footer {
     padding: 1rem;
 }
 
-footer .social-links {
-    margin-top: 1rem;
-}
-
-footer .social-links a {
-    color: #fff;
-    margin: 0 0.5rem; /* Reducem spațiul dintre link-uri */
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer .social-links a:hover {
-    color: #ffcc00;
-}
-
-/* Stiluri pentru butonul hamburger */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 2rem;
-    height: 2rem;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-}
-
-.hamburger span {
-    width: 100%;
-    height: 3px;
-    background: #fff;
-    border-radius: 2px;
-}
-
 /* Media Queries pentru mobil */
 @media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background: #ff6f61;
-        position: absolute;
-        top: 60px;
-        right: 0;
+    .service, .gallery-grid img {
         width: 100%;
-        padding: 1rem;
-    }
-
-    nav ul.active {
-        display: flex;
-    }
-
-    header .logo {
-        font-size: 1.2rem;
-    }
-
-    nav ul li a {
-        font-size: 0.9rem;
-    }
-
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem; /* Reducem dimensiunea textului pentru mobil */
-    }
-
-    .btn {
-        padding: 0.8rem 1.5rem;
-    }
-
-    .event, .package {
-        width: 100%;
-        margin-bottom: 1rem;
     }
 }
