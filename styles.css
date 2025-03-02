@@ -25,7 +25,7 @@ header {
 header .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #8E44AD; /* Mov */
+    color: #ff6f61;
 }
 
 nav ul {
@@ -44,11 +44,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #8E44AD; /* Mov */
+    color: #ff6f61;
 }
 
 .hero {
-    background: url('https://source.unsplash.com/1200x800/?party,celebration') no-repeat center center/cover;
+    background: url('https://via.placeholder.com/1200x800') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -85,7 +85,7 @@ nav ul li a:hover {
 }
 
 .btn {
-    background: #8E44AD; /* Mov */
+    background: #ff6f61;
     color: #fff;
     padding: 0.8rem 1.5rem;
     text-decoration: none;
@@ -95,7 +95,7 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background: #2ECC71; /* Verde */
+    background: #ffcc00;
 }
 
 .events, .packages, .conclusion, .contact {
@@ -106,7 +106,7 @@ nav ul li a:hover {
 h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    color: #8E44AD; /* Mov */
+    color: #ff6f61;
 }
 
 .event-grid, .package-grid {
@@ -137,7 +137,7 @@ h2 {
 
 .price {
     font-size: 1.5rem;
-    color: #F1C40F; /* Galben */
+    color: #ff6f61;
     font-weight: bold;
 }
 
@@ -161,7 +161,7 @@ h2 {
 }
 
 .contact button {
-    background: #8E44AD; /* Mov */
+    background: #ff6f61;
     color: #fff;
     padding: 0.8rem;
     border: none;
@@ -171,7 +171,7 @@ h2 {
 }
 
 .contact button:hover {
-    background: #2ECC71; /* Verde */
+    background: #ffcc00;
 }
 
 .contact-info {
@@ -192,7 +192,7 @@ h2 {
 }
 
 .social-links a:hover {
-    color: #8E44AD; /* Mov */
+    color: #ff6f61;
 }
 
 footer {
